@@ -11,6 +11,8 @@
 ## Please define your main directory here. 
 ## This should be the directory you cloned the git repository into.
 main_dir <- getwd()
+setwd(main_dir)
+
 ## Create and define registry directory
 dir.create(file.path(main_dir, "registries"), showWarnings = FALSE)
 reg_dir <- file.path(main_dir, "registries")

@@ -7,6 +7,7 @@
 ## Please define your main directory here. 
 ## This should be the directory you cloned the git repository into.
 main_dir <- getwd()
+setwd(main_dir)
 
 ## Create and define proc directory
 dir.create(file.path(main_dir, "proc"), showWarnings = FALSE)
