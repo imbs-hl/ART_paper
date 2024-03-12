@@ -1,0 +1,7 @@
+With this git repo the simulations and figures from Laabs et al. "Construction of artificial most representative trees by minimizing tree-based distance measures" can be reproduced. Please note, that the simulations in the paper were performed using a high throughout batch system. This repo will implement the same calculations on your local system, which may lead to a high computation time. 
+
+To start, please first open simulations.R in RStudio. By running this script you should be able to generate a first data set. The preselected settings will need around 10 minutes to calculate. Please note, that the calculations as in the paper will need more than 100 days on a local system. 
+
+The scripts figure2.R, figure3.R and figure4.R can be used to reproduce the figures 2, 3 and 4 from the paper, tab1.R the table 1. You can choose if you want to build the figures from you self calculated data or to import the precalculated data from the paper, which you can find in the proc folder. 
+
+For any issues or questions please conatct me by b.laabs[at]uni-luebeck.de.
