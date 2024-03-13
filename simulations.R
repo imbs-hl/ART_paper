@@ -7,6 +7,7 @@
 ##' computation time. Comments will show you where you can save time or 
 ##' incorporate your own batch system. 
 
+#---------------------------------------
 ## Define directories
 ## Please define your main directory here. 
 ## This should be the directory you cloned the git repository into.
@@ -23,6 +24,7 @@ fun_dir <- file.path(main_dir, "functions")
 dir.create(file.path(main_dir, "proc"), showWarnings = FALSE)
 proc_dir <- file.path(main_dir, "proc")
 
+#---------------------------------------
 ## Load libraries
 if (!"pacman" %in% installed.packages()){
   install.packages("pacman")
@@ -58,7 +60,7 @@ source("functions/simulate_rf_setting_3.R")
 source("functions/simulate_rf_setting_4.R")
 source("functions/simulate_rf_setting_5.R")
 
-## functions to generate the decision tree, MRT or ART
+## functions to generate the MRT or ART
 source("functions/calculate_most_rep_tree.R")
 source("functions/calculate_art_rep_tree.R")
 
@@ -93,7 +95,7 @@ repls <- 3
 
 #---------------------------------------
 ## Create registry 
-reg_name <- "simulate_metrics_original"
+reg_name <- "simulate_art_original"
 reg <- batchtools::makeExperimentRegistry(
   file.dir = file.path(reg_dir, reg_name),
   work.dir = main_dir,
